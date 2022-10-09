@@ -37,13 +37,38 @@ def print_board(board):
 
 
 def make_turn(player):
-    choice = int(input(f"{player[0]} choose a free position [1-9]: "))
+    while True:
+        try:
+            choice = int(input(f"{player[0]} choose a free position [1-9]: "))
+        except ValueError:
+            print('Enter number between 1 and 9!')
+            continue
+        if 1 <= choice <= 9:
+            row = math.ceil(choice / 3) - 1
+            col = choice % 3 - 1
+            if current_board[row][col] == " ":
+                current_board[row][col] = current_player[1]
+                break
+            else:
+                print('The position is already taken. Please try again!')
+        else:
+            print('Enter valid number!')
+
     row = math.ceil(choice/3) - 1
     col = choice % 3 -1
     current_board[row][col] = current_player[1]
 
 
 def check_win(player):
+    result = False
+    first_diagonal_win = all([current_board[i][i] == player[1] for i in range(3)])
+    second_diagonal_win = all([current_board[i][2 - i] == player[1] for i in range(3)])
+    row_win = any([all(True if pos == player[1] else False for pos in row) for row in current_board])
+    col_win = any([all(True if current_board[r][c] == player[1] else False for r in range(3)) for c in range(3)])
+    if any([first_diagonal_win, second_diagonal_win, row_win, col_win]):
+        print(f'{player[0]} won!')
+        result = True
+    return result
 
 
 set_players()
@@ -52,9 +77,11 @@ players = [player_one, player_two]
 current_player = players[0]
 print_board(current_board)
 
+
 while True:
     current_player = players[0]
     make_turn(current_player)
     print_board(current_board)
-
+    if check_win(current_player):
+        break
     players[0], players[1] = players[1], players[0]
