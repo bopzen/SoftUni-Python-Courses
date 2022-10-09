@@ -54,10 +54,6 @@ def make_turn(player):
         else:
             print('Enter valid number!')
 
-    row = math.ceil(choice/3) - 1
-    col = choice % 3 -1
-    current_board[row][col] = current_player[1]
-
 
 def check_win(player):
     result = False
