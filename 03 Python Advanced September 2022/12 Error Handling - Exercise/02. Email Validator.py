@@ -19,9 +19,9 @@ while True:
         raise MustContainAtSymbolError("Email must contain @")
     else:
         name, domain = email.split('@')
-        domain_name, domain_extension = domain.split('.')
+        domain_full = domain.split('.')
         if len(name) <= 4:
             raise NameTooShortError("Name must be more than 4 characters")
-        if domain_extension not in valid_domains:
+        if domain_full[-1] not in valid_domains:
             raise InvalidDomainError("Domain must be one of the following: .com, .bg, .org, .net")
     print('Email is valid')
