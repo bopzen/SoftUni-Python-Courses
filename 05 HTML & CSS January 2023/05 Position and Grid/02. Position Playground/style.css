@@ -1,0 +1,30 @@
+@import "https://use.fontawesome.com/releases/v5.10.2/css/all.css";
+
+#div1 {
+    background: rgb(11,203,151);
+    background: linear-gradient(267deg, rgba(11,203,151,1) 0%, rgba(19,116,98,1) 49%, rgba(0,83,179,1) 100%);
+}
+
+#div2 {
+    background: rgb(203,93,11);
+    background: linear-gradient(267deg, rgba(203,93,11,1) 0%, rgba(116,77,19,1) 49%, rgba(179,0,95,1) 100%);
+}
+.viewport {
+    position: relative;
+    height: 750px;
+    padding: 40px;
+}
+
+.card {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+i {
+    position: relative;
+    color: white;
+    left: -30px;
+    bottom: 10px;
+}
