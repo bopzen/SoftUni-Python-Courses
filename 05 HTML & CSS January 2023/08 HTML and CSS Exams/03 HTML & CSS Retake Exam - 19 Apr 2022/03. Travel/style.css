@@ -1,0 +1,200 @@
+@import 'https://use.fontawesome.com/releases/v5.10.2/css/all.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    font-family: Helvetica, sans-serif;
+}
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 50px;
+}
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.logo {
+    position: absolute;
+    width: 20%;
+    background: rgb(152,107,13);
+    background: linear-gradient(0deg, rgba(152,107,13,1) 0%, rgba(179,137,35,1) 53%, rgba(206,170,58,1) 89%);
+    padding: 30px;
+    top: 10px;
+    left: -5px;
+    z-index: 1;
+    box-shadow: 1px 2px 4px -1px black;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding-bottom: 8px;
+}
+li a {
+    padding: 8px 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #4e5674
+}
+nav ul {
+    display: flex;
+    font-size: 0.9rem;
+    padding-left: 0;
+    margin: 0;
+}
+
+nav ul li a:hover {
+    color: white;
+    background: rgb(152,107,13);
+    background: linear-gradient(0deg, rgba(152,107,13,1) 0%, rgba(179,137,35,1) 53%, rgba(206,170,58,1) 89%);
+}
+
+.nav-icons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-icons a i {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.pictures {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 35vw;
+    overflow: hidden;
+}
+.pictures img {
+    width: 100vw;
+    object-fit: cover;
+
+}
+.shuttle {
+    width: 40%;
+    color: white;
+    background-color: black;
+    background: rgba(0,0,0,0.65);
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    padding: 30px;
+    font-size: 0.8rem;
+    line-height: 1.2;
+}
+.shuttle button {
+    background: transparent;
+    color: #ffa00d;
+    border: 2px solid white;
+    padding: 8px 15px;
+    font-weight: bold;
+}
+.shuttle button:hover {
+    background-color: white;
+}
+
+.buy-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 20px 340px;
+    margin: auto;
+    font-size: 0.9rem;
+    text-shadow: 0px 1px 1px gray;
+    background: rgb(152,107,13);
+    background: linear-gradient(90deg, rgba(152,107,13,1) 0%, rgba(179,137,35,1) 53%, rgba(206,170,58,1) 89%);
+    color: white;
+}
+.buy-card button {
+    background-color: transparent;
+    padding: 8px 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+.buy-card h2 {
+    margin-top: 0
+}
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 100px;
+    color: #4e5674;
+}
+.features h2 {
+    font-size: 2.5rem;
+    font-weight: lighter;
+    text-align: center;
+
+}
+.features .pics {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 300px;
+}
+.card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: 0.9rem;
+}
+.card img {
+    border-radius: 100px;
+    border: 2px solid white;
+    outline: 2px solid black
+
+}
+.card p {
+    text-align: center;
+    margin: 30px 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    text-shadow: 0px 1px 1px gray;
+    background: rgb(152,107,13);
+    background: linear-gradient(90deg, rgba(152,107,13,1) 0%, rgba(179,137,35,1) 53%, rgba(206,170,58,1) 89%);
+}
+.subscribe div:nth-child(1) {
+    padding: 15px 40px 0px 40px;
+    line-height: 0.5;
+}
+.subscribe button {
+    margin: 25px 40px 10px 40px;
+    background-color: transparent;
+    padding: 8px 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+.subscribe button:hover {
+    cursor: pointer;
+}

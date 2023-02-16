@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+body {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Mulish, sans-serif;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    aspect-ratio: 4 / 3;
+    border-radius: 20px;
+    background-image: url(images/form-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 10px 10px 10px 0px gray;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.1rem;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 30px;
+    font-size: 0.6rem;
+    line-height: 2;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid lightgray;
+    background: transparent;
+    border-radius: 90px;
+}
+.checkbox {
+    width: auto;
+}
+button {
+    background-color: brown;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 90px;
+    align-self: center;
+    font-size: 0.7rem;
+    margin-top: 20px;
+}
+.double {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.double div {
+    padding: 0;
+    margin: 0;
+}

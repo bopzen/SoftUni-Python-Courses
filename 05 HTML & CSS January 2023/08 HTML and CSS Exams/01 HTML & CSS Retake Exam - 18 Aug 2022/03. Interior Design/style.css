@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@100;400&display=swap');
+@import 'https://use.fontawesome.com/releases/v5.10.2/css/all.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+div {
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 270vh;
+    font-family: Roboto;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    height: 60%;
+    background-image: url(image/image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+.bottom {
+    display: flex;
+    height: 50%;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    background-color: #f2f0f3;
+    padding: 20px 100px;
+    line-height: 1.5;
+}
+.left h1 {
+    text-transform: uppercase;
+    font-family: Abril Fatface;
+    font-size: 3.1rem;
+}
+b {
+    text-transform: uppercase;
+}
+.contact {
+    border-bottom: 2px solid black;
+}
+span {
+    display: inline-block;
+    padding: 0px 5px
+}
+.fas {
+    padding-right: 10px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    background-color: #bab1ad;
+    line-height: 0;
+    padding-left: 30px;
+}
+.right h1 {
+    color: #f2f0f3;
+    font-size: 5rem;
+    font-weight:lighter
+}
+.right p {
+    text-transform: uppercase;
+}
+.interior-design, .info {
+    border: 1px solid rgb(168, 168, 168);
+    margin: 30px;
+
+}
+.interior-design {
+    width: 24%;
+    height: 24%;
+    padding: 30px 110px 10px 20px;
+    box-shadow: 5px 5px 10px -5px;
+}
+.interior-design h1 {
+    font-family: Abril Fatface;
+    font-size: 3.1rem;
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+    margin: 0;
+}
+.interior-design p {
+    line-height: 0px;
+    font-size: 1.4rem;
+}
+
+.info {
+    width: 30%;
+    height: 30%;
+    border: 1px solid darkgray;
+    align-self: center;
+    text-align: right;
+    box-shadow: 5px 5px 10px -5px black;
+    color: #f2f0f3;
+    text-shadow: 2px 2px #8a7f7b;
+
+    padding: 30px;
+    background: rgb(126,106,97);
+    background: linear-gradient(90deg, rgba(126,106,97,1) 0%, rgba(182,179,177,1) 53%, rgba(189,180,175,1) 89%);
+}
+.info h1 {
+    font-size: 3.5rem;
+    line-height: 0;
+    margin: 0;
+    margin-top: 40px
+}
+.info p {
+    margin: 0;
+    line-height: 1.5;
+}

@@ -1,0 +1,64 @@
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css'); 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+    margin: auto;
+    background-color: #EEE;
+    font-family: 'Courgette', cursive;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+.card {
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+img {
+    width: 100%;
+}
+.card h2 {
+    padding: 10px 20px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    border-bottom: 2px solid rgb(201, 48, 48);
+}
+.card p {
+    padding: 10px;
+    text-align: center;
+}
+.card footer {
+    padding: 20px;
+    text-align: center;
+}
+.card a {
+    text-decoration: none;
+    color: black;
+}
+.card a i {
+    color: rgb(201, 48, 48);
+}
+#design {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: 200px;
+    color:rgb(201, 48, 48);
+}
+h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
