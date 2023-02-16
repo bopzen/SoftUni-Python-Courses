@@ -1,0 +1,100 @@
+@import 'https://use.fontawesome.com/releases/v5.10.2/css/all.css';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    background-color: white;
+}
+fieldset{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 30%;
+    margin: 4rem auto;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 2rem;
+    background-color: #f8f8f8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px -1px gray;
+}
+form p {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    line-height: 1.7;
+}
+input {
+    width: 80%;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+i {
+    position: absolute;
+    left: 20px;
+}
+
+legend {
+    position: absolute;
+    top: -18px;
+    left: -1px;
+    padding: 8px 120px 8px 10px;
+    border: 1px solid gray;
+    z-index: 1;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px -1px gray;
+}
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 7px 20px;
+    align-self:flex-start
+}
+@media (max-width: 1800px) {
+    fieldset{
+        width: 40%;
+
+    }
+
+    input {
+        width: 100%;
+        padding-bottom: 0.5rem
+    }
+}
+
+@media (max-width: 800px) {
+    fieldset{
+        width: 60%;
+
+    }
+    form p {
+        flex-direction: column;
+
+    }
+    input {
+        width: 100%;
+        padding-bottom: 0.5rem
+    }
+}
+
+@media (max-width: 400px) {
+    fieldset{
+        width: 90%;
+
+    }
+    form p {
+        flex-direction: column;
+
+    }
+    input {
+        width: 100%;
+        padding-bottom: 0.5rem
+    }
+}

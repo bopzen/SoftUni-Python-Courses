@@ -1,0 +1,89 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    margin: auto;
+}
+h3 {
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    margin: 30px;
+}
+p {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 20px rgb(187, 186, 186);
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+}
+.info * {
+    margin: 1.5rem;
+}
+button {
+    width: 100;
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 153, 0);
+    color: white;
+    padding: 10px 15px;
+    margin: 20px;
+    align-self:flex-end;
+    border: none;
+}
+
+
+@media (max-width: 1800px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    .card {
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .card {
+        width: 90%;
+    }
+}
