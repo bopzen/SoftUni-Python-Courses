@@ -1,0 +1,225 @@
+@import 'https://use.fontawesome.com/releases/v5.10.2/css/all.css';
+
+:root {
+    --blue-color: #008cba;
+    --dark-gray: #454545;
+    --light-gray: #eef0f1;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+    color: var(--dark-gray);
+    line-height: 1.5;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--dark-gray)
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 100px;
+}
+h1, h2, h3, h4 {
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+.break-line {
+    border-top: 3px solid black;
+    width: 80px;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+header nav ul li {
+    padding: 10px 20px;
+}
+header nav ul li a {
+    padding-bottom: 4px;
+}
+header nav ul li a:hover {
+    border-bottom: 3px solid var(--blue-color)
+}
+header h1 span {
+    color: var(--blue-color)
+}
+.main-pic {
+    position: relative;
+    margin: 0;
+}
+.main-pic img {
+    width: 100%;
+}
+.get-started {
+    position: absolute;
+    width: 35%;
+    bottom: 30%;
+    left: 100px;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2.5rem;
+    padding: 15px;
+}
+.get-started p {
+    margin: 0;
+}
+.get-started button {
+    background-color: var(--blue-color);
+    border: none;
+    border-radius: 30px;
+    margin: 0;
+    color:white;
+    padding: 8px 20px;
+    font-size: 1.1rem;
+}
+.get-started button:hover {
+    cursor: pointer;
+}
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 100px;
+    text-align: center;
+}
+.welcome .break-line {
+    border-top: 3px solid var(--blue-color);
+}
+.welcome button {
+    background-color: var(--dark-gray);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin-bottom: 40px;
+}
+.welcome button:hover {
+    cursor: pointer;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--light-gray);
+}
+.services h2 {
+    margin-top: 30px;
+}
+.services .break-line {
+    margin-bottom: 30px;
+}
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 100px;
+}
+.card {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 30px;
+}
+.card img {
+    width: 100%;
+}
+.card-info {
+    padding: 10px 30px 30px 30px;
+}
+.card-info button {
+    background-color: var(--dark-gray);
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    color: white;
+}
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #393f43;
+    color: white;
+    padding-bottom: 30px;
+}
+.newsletter .break-line {
+    border-top: 3px solid white;
+}
+.newsletter p {
+    font-size: 0.8rem;
+}
+form input {
+    border: none;
+    border-radius: 3px;
+    padding: 10px 200px 10px 10px;
+    background-color: #545a5e;
+    font-style: oblique;
+}
+form button {
+    border: none;
+    border-radius: 3px;
+    padding: 10px 30px;
+    background-color: #6bbfff;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+form button:hover {
+    cursor: pointer;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2f3539;
+    color: white;
+}
+.footer-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 0 100px;
+}
+.footer-wrapper ul {
+    padding-left: 0;
+}
+.footer-wrapper h4 {
+    margin-bottom: 0px;
+}
+
+.footer-wrapper a {
+    color: white;
+    font-size: 0.7rem;
+}
+.follow-us nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+.follow-us nav ul li a {
+    font-size: 1.1rem;
+}
+.copyright {
+    background-color: #262b2f;
+    width: 100%;
+    text-align: center;
+    font-size: 0.7rem;
+}
+.copyright a {
+    color: var(--blue-color)
+}
