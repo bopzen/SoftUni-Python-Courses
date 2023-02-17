@@ -1,0 +1,78 @@
+@media (max-width: 600px) {
+    header {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .tm-header-inner {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 20px;
+        padding-top: 0;
+        font-size: 1.5rem;
+        font-family: "Open Sans", Arial, sans-serif;
+        height: 80%;
+    }
+    .col-md-6 {
+        padding: 0;
+    }
+    .tm-site-text-box {
+        width: 80%;
+    }
+    .tm-header-inner img {
+        width: 15%
+    }
+    .tm-welcome-section h2 {
+        font-size: 3rem;
+        margin: 0;
+    }
+    .tm-welcome-section {
+        font-size: 1.5rem;
+    }
+    .tm-welcome-section {
+        align-items: center;
+    }
+    .tm-paging-links nav ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px;
+    }
+    .tm-paging-item {
+        width: 30%;
+        font-size: 1.5rem;
+    }
+    .tm-gallery {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .tm-gallery-page-pizza, .tm-gallery-page {
+        margin: 0;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tm-gallery-item {
+        width: 100%;
+        max-width: 100%;
+    }
+    .tm-gallery-item figure img {
+        width: 100%;
+    }
+    .tm-gallery-item figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+    }
+    .tm-cta-section {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .tm-cta-section .row {
+        flex-direction: column;
+    }
+}

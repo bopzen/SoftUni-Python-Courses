@@ -1,0 +1,90 @@
+@import 'https://use.fontawesome.com/releases/v5.10.2/css/all.css';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --green: #a4c539;
+  --light-gray: #f7f7f7;
+  --dark-gray: #5c5c5c;
+}
+
+/* -----Resets----- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+ul[role='list'], ol[role='list'] {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* -----Styling----- */
+
+body {
+  margin: 0 auto;
+  font-family: Poppins, sans-serif;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1, h5 {
+  text-align: center;
+}
+h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+span {
+  color: var(--green);
+}
+h5 {
+  font-weight: normal;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: var(--dark-gray)
+}
+h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 20rem;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  gap: 2rem;
+}
+.card {
+  width: 33.33%;
+  background-color: var(--light-gray);
+}
+img {
+  width: 100%;
+}
+.info {
+  padding: 1rem 2rem 2rem 2rem;
+  color: var(--dark-gray);
+  font-size: 0.9rem;
+}
+button {
+  border: none;
+  background-color: var(--green);
+  border-radius: 30px;
+  color: white;
+  font-weight: 800;
+  padding: 12px 28px;
+  margin-top: 2rem;
+}
