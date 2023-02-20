@@ -1,0 +1,62 @@
+@import 'https://use.fontawesome.com/releases/v5.10.2/css/all.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* -----Resets----- */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+	margin: 0;
+}
+
+ul[role='list'], ol[role='list'] {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* -----Styling----- */
+
+.main-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	margin: 2rem 20rem;
+}
+.left, .right {
+	width: 50%;
+	padding: 20px;
+}
+.right img {
+	width: 100%;
+}
+.list-wrapper {
+	display: flex;
+	gap: 10px;
+}
+.list-wrapper img {
+	width: 10%
+}
+.left {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+h2 {
+	font-family: Montserrat, sans-serif;
+}
+h3, p {
+	font-family: Pippins, sans-serif
+}
+p {
+	color: gray;
+	line-height: 1.5;
+}

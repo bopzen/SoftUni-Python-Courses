@@ -1,0 +1,122 @@
+@import 'https://use.fontawesome.com/releases/v5.10.2/css/all.css';
+
+:root {
+	--light-gray: #ececec;
+	--dark-gray: #383838;
+	--orange: #e24e2a;
+	--green: #1b9772;
+	--darker-gray: #2c383b;
+	--logo-gray: #6b6b6b;
+	--light-orange: #f5ceb8;
+	--text-gray: #6b6b6b;
+}
+
+/* -----Resets----- */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+	margin: 0;
+}
+
+ul[role='list'], ol[role='list'] {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* -----Styling----- */
+body {
+	font-family: Helvetica, sans-serif;
+}
+header, .logo, nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.5rem;
+}
+.logo {
+	margin: 2.5rem 5rem;
+}
+header h1 {
+	border-right: 2px solid rgb(151, 151, 151);
+	padding-right: 20px;
+	font-size: 3.2rem;
+	color: var(--darker-gray)
+}
+.logo p {
+	padding-left: 20px;
+	padding-top: 1rem;
+}
+.logo span {
+	color: var(--logo-gray)
+}
+nav ul {
+	gap: 3px;
+}
+nav {
+	margin: 2.5rem 5rem;
+}
+nav ul li {
+	background-color: var(--light-gray);
+	padding: 26px 30px;
+}
+nav ul li:hover {
+	background-color: var(--orange);
+	color: white;
+}
+.main-image {
+	display: flex;
+	justify-content: center;
+	height: 650px;
+	overflow: hidden;
+}
+.main-image img {
+	width: 100%;
+	object-fit: cover;
+}
+.disclaimer {
+	background-color: var(--orange);
+	padding: 5rem 16rem;
+	text-align: center;
+	line-height: 2;
+	font-size: 1.3rem;
+	color: var(--light-orange)
+}
+.disclaimer u {
+	color: white;
+}
+.features {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding: 6rem;
+	background-color: var(--darker-gray);
+	gap: 30px;
+}
+.features h3 {
+	color: white;
+	margin-bottom: 2rem;
+}
+.features p {
+	line-height: 1.5;
+	border-top: 1px solid var(--text-gray);
+	padding-top: 2rem;
+	color: var(--text-gray);
+	font-size: 1.2rem;
+}
+.fas {
+	font-size: 5rem;
+	padding: 30px;
+	background-color: var(--orange);
+	color: white;
+	margin-bottom: 2rem;;
+}
