@@ -7,13 +7,9 @@ function focused() {
     function inFocus(e) {
         let element = e.currentTarget;
         element.parentElement.className = "focused";
-        console.log(element)
     }
     function outFocus(e) {
         let element = e.currentTarget;
         element.parentElement.classList.remove("focused");
-        console.log(element)
     }
-        
-    console.log(inputFields)
 }
