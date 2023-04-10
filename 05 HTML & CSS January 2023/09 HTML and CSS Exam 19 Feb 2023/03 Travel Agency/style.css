@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import 'https://use.fontawesome.com/releases/v5.10.2/css/all.css';
+
+:root {
+	--button-brown: #370511;
+}
+
+/* -----Resets----- */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+	margin: 0;
+}
+
+ul[role='list'], ol[role='list'] {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* -----Styling----- */
+body {
+	font-family: Poppins;
+	line-height: 1.5;
+}
+.header {
+	position: absolute;
+	top:0;
+	width: 67%;
+	display: flex;
+	justify-content: space-between;
+	margin: 1rem 20rem;
+}
+.home-navigation {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	font-weight: 500;
+}
+.home-navigation ul {
+	display: flex;
+	gap: 2rem;
+}
+.button {
+	border: none;
+	padding: 0.5rem 2rem;
+	border-radius: 90px;
+	color: white;
+	font-weight: 600;
+	background-color: var(--button-brown);
+}
+.button:hover {
+	cursor: pointer;
+	background-color:#614248
+}
+.home-navigation li {
+	padding: 4px 8px;
+}
+.home-navigation li:hover{
+	color: white;
+	border-radius: 4px;
+	background-color: var(--button-brown);
+}
+
+.hero {
+	display: flex;
+	height: 740px;
+	overflow: hidden;
+}
+
+.hero img {
+	width: 100%;
+	object-fit: cover;
+	margin-bottom: -5rem;
+}
+header {
+	position: relative;
+}
+
+.booking {
+	background-color: transparent;
+	position: absolute;
+	bottom: 10rem;
+	left: 20rem;
+	width: 600px
+}
+.booking h2 {
+	font-size: 4rem;
+}
+.booking h3 {
+	font-size: 2rem;
+	font-weight: normal;
+}
+.booking .info {
+	font-size: 1.2rem;
+	padding: 2rem 5rem 2rem 0;
+}
+
+.places {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 1rem 16rem;
+	text-align: center;
+}
+.places h3 {
+	margin-top: 3rem;
+	font-size: 2rem;
+}
+.places h6 {
+	font-weight: normal;
+	margin-bottom: 2rem;
+}
+
+.card-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.card {
+	width: 30%;
+	height: 700px;
+	border-radius: 12px;
+	overflow: hidden;
+
+}
+.card img {
+	width: 100%;
+	height: 50%;
+	object-fit: cover;
+}
+.card h4 {
+	font-size: 1.8rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+.card p {
+	text-align: left;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+.button-card {
+	margin-top: 3rem;
+	border: 2px solid var(--button-brown);
+	padding: 1rem 2rem;
+	border-radius: 90px;
+	color: black;
+	font-size: 1.3rem;
+	font-weight: 800;
+	background-color: transparent;
+}
+.button-card:hover {
+	cursor: pointer;
+	color: white;
+	background-color: var(--button-brown);
+}
+footer {
+	background-color: black;
+	display: flex;
+	color: white;
+	justify-content: space-between;
+	align-items: center;
+	line-height: 2.5;
+	padding: 4rem 16rem;
+}
+.footer-nav {
+	display: flex;
+	justify-content: space-between;
+	gap: 5rem;
+}
+.fab {
+	letter-spacing: 0.8rem;
+	font-size: 1.5rem;
+}
+.footer-nav a:hover, .social-media a:hover {
+	color: rgb(216, 146, 146);
+}

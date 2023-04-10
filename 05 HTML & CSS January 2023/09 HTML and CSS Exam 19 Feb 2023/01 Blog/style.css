@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import 'https://use.fontawesome.com/releases/v5.10.2/css/all.css';
+
+/* -----Colors----- */
+:root {
+	--bg-color: #f6e0b5;
+	--card-color: #66545e;
+}
+
+/* -----Resets----- */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+	margin: 0;
+}
+
+ul[role='list'], ol[role='list'] {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* -----Styling----- */
+body {
+	font-family: Montserrat, sans-serif;
+	font-size: 1.5rem;
+	font-weight: 500;
+	background-color: var(--bg-color);
+	color: var(--card-color)
+}
+
+.main-container {
+	width: 70%;
+	display: flex;
+	margin: 4rem auto;
+	padding: 3rem;
+	justify-content: center;
+}
+
+.cards-container {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	justify-content: space-around;
+}
+.card {
+	width: 48%;
+	height: 270px;
+	border: 2px solid #453d36;
+	border-radius: 16px;
+	overflow: hidden;
+	background-color: var(--card-color);
+	box-shadow: 0px 20px 100px 10px rgb(133, 121, 97)
+}
+.card img {
+	width: 100%;
+	height: 85%;
+}
+.link {
+	padding-top: 1px;
+	padding-left: 4px;
+	color: white;
+}
+
+.categories-container {
+	margin-left: 3rem;
+	margin-top: 1rem;
+}
+.categories-container h3 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-bottom: 2rem;
+}
+li {
+	margin-bottom: 1rem;
+}
+
