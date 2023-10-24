@@ -8,3 +8,4 @@ Upload of the solutions to all the problems and excersises in the Python Course 
 - [05 HTML & CSS January 2023](https://github.com/bopzen/SoftUni_Software_Engineering_Program_With_Python/tree/main/05%20HTML%20%26%20CSS%20January%202023)
 - [06 JS-Front-End February 2023](https://github.com/bopzen/SoftUni_Software_Engineering_Program_With_Python/tree/main/06%20JS-Front-End%20February%202023)
 - [07 PostgresSQL September 2023](https://github.com/bopzen/SoftUni_Software_Engineering_Program_With_Python/tree/main/07%20PostgresSQL%20September%202023)
+- [08 Python ORM October 2023](https://github.com/bopzen/SoftUni_Software_Engineering_Program_With_Python/tree/main/08%20Python%20ORM%20October%202023)
